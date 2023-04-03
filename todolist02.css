@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(24, 20, 24); */
+    background-image: linear-gradient(-90deg, rgb(226, 231, 149), rgb(236, 132, 5));
+    min-height: 100vh;
+    color: aliceblue;
+}
+
+.navagitaion {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    background-color: orange;
+    font-size: 2rem;
+    color: rgb(130, 18, 1);
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: rgb(177, 45, 25);
+
+}
+
+#add-task {
+    display: flex;
+
+}
+
+input,button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#add-input {
+    flex: 1 1 0%;
+    background-image: linear-gradient(-90deg, rgb(195, 239, 94), rgb(168, 226, 231));
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    margin-right: 1.5rem;
+    color: rgb(177, 45, 25);
+}
+
+#submit-task {
+
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    margin-right: 1.5rem;
+    color: rgb(177, 45, 25);
+    cursor: pointer;
+
+}
+
+#submit-task:hover {
+    opacity: 0.8;
+}
+
+#submit-task:active {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-list h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: rgb(156, 33, 14);
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    background-image: linear-gradient(-90deg, rgb(230, 149, 28), rgb(195, 239, 94));
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task .content {
+    flex: 1 1 0%;
+}
+
+.task .content .text {
+    color: black;
+    font-size: 1.25rem;
+    width: 100%;
+    display: block;
+}
+
+.task .content .text:not(:read-only) {
+    color: rgb(156, 33, 14);
+
+}
+
+.task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.task .actions button:hover {
+    opacity: 0.8;
+    color: rgb(156, 33, 14);
+}
+
+.task .actions button:active {
+    opacity: 0.5;
+}
+
+footer {
+    background-color: rgb(94, 92, 92);
+    text-decoration: dashed;
+    text-align: center;
+    padding: .25rem;
+    font-size: 1.1rem;
+    color: rgb(193, 214, 11);
+
+}
